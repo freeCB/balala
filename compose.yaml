@@ -1,0 +1,51 @@
+services:
+  mysql:
+    image: freecb/balala-mysql:${VERSION}
+    networks:
+      - bridge-net
+    ports:
+      - '${MYSQL_PORT}:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      # MYSQL_PWD: "${MYSQL_ROOT_PASSWORD}" # 加上这个mysql容器会提示错误，启动失败
+    volumes:
+      - mysql_data:/var/lib/mysql # 挂载mysql数据
+  redis:
+    image: redis:7.2.3
+    networks:
+      - bridge-net
+    volumes:
+      - redis_data:/data
+  api:
+    image: freecb/balala-api:${VERSION}
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+    networks:
+      - bridge-net
+    volumes:
+      - upload_files:/app/upload_files/ #挂载用户上传的文件
+      - river_files:/app/configs/var/ # 挂载river同步position
+    command: [ '-c', './configs/config.yaml' ] #指定配置文件
+    depends_on:
+      - mysql
+      - redis
+  web:
+    image: freecb/balala-web:${VERSION}
+    restart: always
+    networks:
+      - bridge-net
+    ports:
+      - '${WEB_PORT}:80'
+    environment:
+      TZ: Asia/Shanghai
+networks:
+  bridge-net:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  redis_data:
+  upload_files:
+  river_files:

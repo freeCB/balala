@@ -1,0 +1,43 @@
+name: Feature suggest/功能建议
+description: Suggest a feature or improvement/将你的想法告诉我们！
+title: "\u200b"
+labels: ['feat', 'story']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature suggestion!
+        感谢您在百忙之中给予我们宝贵的建议！
+  - type: textarea
+    id: description
+    attributes:
+      label: Description/功能描述
+      description: |
+        What would you like to see added to AFFiNE?
+        你希望我们添加什么样的功能？
+      placeholder: Please explain in details the feature and improvements you'd like to see./请详细说明该功能.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Use case/用例
+      description: |
+        How might this feature be used and who might use it.
+        该功能如何使用及该功能的使用者是谁.
+  - type: textarea
+    attributes:
+      label: 💡Anything else?/其他补充
+      description: |
+        Links? References? Anything that will give us more context about the idea you have!
+        将任何跟您所想功能相关的链接，参考资料补充进来，更有助于我们了解你的想法！
+        Tip: You can attach images here
+        小贴士：您可以在这贴入图片
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?/你愿意提交PR么？
+      description: |
+        (Optional) We encourage you to submit a [Pull Request](/) (PR) to help improve Balala for everyone, especially if you have a good understanding of how to implement a fix or feature.
+        See the Balala [Contributing Guide](https://github.com/toeverything/affine/blob/canary/CONTRIBUTING.md) to get started.
+        (可选) 我们鼓励您提交[Pull Request](/) (PR) 来帮助我们改进Balala，特别是如果您非常了解如何实现修复或者某个功能。请参考Balala[Contributing Guide](/) 开始使用
+      options:
+        - label: Yes I'd like to help by submitting a PR!/我愿意！

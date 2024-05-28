@@ -44,6 +44,19 @@ body:
         您可以在代码库中看到版本信息
     validations:
       required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: |
+      What browsers are you seeing the problem on if you're using web version?
+      你是在哪个浏览器发现这个问题的？
+      multiple: true
+      options:
+        - Chrome/谷歌
+        - Microsoft Edge/微软bing
+        - Firefox/火狐
+        - Safari/苹果浏览器
+        - Other/其他
   - type: textarea
     id: logs
     attributes:

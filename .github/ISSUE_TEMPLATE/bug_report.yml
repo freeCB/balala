@@ -54,6 +54,7 @@ body:
         - Firefox/火狐
         - Safari/苹果浏览器
         - Other/其他
+        - This issue is not front-end related/此问题与前端无关
     validations:
       required: true
   - type: textarea

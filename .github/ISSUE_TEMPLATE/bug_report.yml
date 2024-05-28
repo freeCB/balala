@@ -16,11 +16,12 @@ body:
     id: issue-type
     attributes:
       label: 🔍Bug type?/Bug类型？
-      multiple: true  
       options:
         - Show Bug/前端展示bug
         - code error/代码错误
         - I can't tell./无法判断
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -33,12 +34,13 @@ body:
     id: browsers
     attributes:
       label: 🔍What's the version of your bug?/发生Bug所在的版本是？
-      multiple: true
       options:
         - v1.3.4.1
         - v1.3.3.2
         - v1.3.3.1
         - I don't know the version./我不知道哪个版本
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:

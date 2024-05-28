@@ -1,5 +1,5 @@
 name: 🐞Bug Report/Bug 反馈
-description: 🐞File a bug report/将您所看到的Bug提交
+description: File a bug report/将您所看到的Bug提交
 title: "Add a title/添加标题"
 labels: ['bug']
 body:

@@ -17,8 +17,8 @@ body:
     attributes:
       label: 🔍Bug type?/Bug类型？
       options:
-        - Show Bug/前端展示bug
-        - code error/代码错误
+        - Show Bug/显示bug
+        - Function Bug/功能bug
         - I can't tell./无法判断
     validations:
       required: true

@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: 🔍What's the version of your bug?/发生Bug所在的版本是？
+      label: 💦What's the version of your bug?/发生Bug所在的版本是？
       options:
         - v1.3.4.1
         - v1.3.3.2
@@ -47,14 +47,15 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on if you're using web version?/你是在哪个浏览器发现这个问题的？
-      multiple: true
+      label: 🔒What browsers are you seeing the problem on if you're using web version?/你是在哪个浏览器发现这个问题的？
       options:
         - Chrome/谷歌
         - Microsoft Edge/微软bing
         - Firefox/火狐
         - Safari/苹果浏览器
         - Other/其他
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:

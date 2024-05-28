@@ -1,6 +1,6 @@
 name: 🐞Bug Report/Bug 反馈
 description: File a bug report/将您所看到的Bug提交
-title: "Add a title/添加标题"
+title: "Add a title"
 labels: ['bug']
 body:
   - type: markdown
@@ -31,7 +31,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: version
     attributes:
       label: 🔍What's the version of your bug?/发生Bug所在的版本是？
       options:

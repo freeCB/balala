@@ -39,6 +39,9 @@ body:
         - v1.3.3.2
         - v1.3.3.1
         - I don't know the version./我不知道哪个版本
+      description: |
+        You can see the version information in the code base.
+        您可以在代码库中看到版本信息
     validations:
       required: true
   - type: textarea

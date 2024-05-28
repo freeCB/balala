@@ -20,7 +20,7 @@ body:
       options:
         - Show Bug/前端展示bug
         - code error/代码错误
-        - I can't tell./无法判断      
+        - I can't tell./无法判断
   - type: textarea
     id: what-happened
     attributes:

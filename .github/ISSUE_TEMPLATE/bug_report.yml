@@ -47,7 +47,7 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: |
+      label: 
       What browsers are you seeing the problem on if you're using web version?
       你是在哪个浏览器发现这个问题的？
       multiple: true

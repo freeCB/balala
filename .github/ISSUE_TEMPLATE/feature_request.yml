@@ -36,8 +36,8 @@ body:
     attributes:
       label: 🔥Are you willing to submit a PR?/你愿意提交PR么？
       description: |
-        (Optional) We encourage you to submit a [Pull Request](/) (PR) to help improve Balala for everyone, especially if you have a good understanding of how to implement a fix or feature.
+        (Optional) We encourage you to submit a [Pull Request](https://github.com/freeCB/balala/pulls) (PR) to help improve Balala for everyone, especially if you have a good understanding of how to implement a fix or feature.
         See the Balala [Contributing Guide](/) to get started.
-        (可选) 我们鼓励您提交[Pull Request](/) (PR) 来帮助我们改进Balala，特别是如果您非常了解如何实现修复或者某个功能。请参考Balala[Contributing Guide](/) 开始使用
+        (可选) 我们鼓励您提交[Pull Request](https://github.com/freeCB/balala/pulls) (PR) 来帮助我们改进Balala，特别是如果您非常了解如何实现修复或者某个功能。请参考Balala[Contributing Guide](/) 开始使用
       options:
         - label: Yes I'd like to help by submitting a PR!/我愿意！

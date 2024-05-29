@@ -17,59 +17,55 @@ body:
     attributes:
       label: 🔍Bug type?/Bug类型？
       options:
-        - Show Bug/显示bug
-        - Function Bug/功能bug
-        - I can't tell./无法判断
+        - 显示异常bug/Show Bug
+        - 功能错误bug/Function Bug
+        - 无法判断/I can't tell.
     validations:
       required: true
   - type: textarea
     id: what-happened
     attributes:
-      label: 📋What happened?/Bug描述？
-      description: Also tell us, what did you expect to happen?/将Bug内容进行描述
-      placeholder: Tell us what you see!/Bug详情描述
+      label: 📋Bug问题描述/What happened?
+      description: 将Bug问题相关内容进行描述/Also tell us, what did you expect to happen?
+      placeholder: Bug详情描述/Tell us what you see!
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: version
     attributes:
-      label: 💦What's the version of your bug?/发生Bug所在的版本是？
-      options:
-        - v1.3.4.1
-        - v1.3.3.2
-        - v1.3.3.1
-        - I don't know the version./我不知道哪个版本
+      label: 💦发生Bug所在的版本是？What's the version of your bug?
+      placeholder: "如 v1.0.0"
       description: |
-        You can see the version information in the code base.
-        您可以在代码库中看到版本信息
+        您可以在代码库中看到版本信息[link](https://github.com/freeCB/balala/releases)
+        You can see the version information in the code base.[link](https://github.com/freeCB/balala/releases)
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: 🔒What browsers are you seeing the problem on if you're using web version?/你是在哪个浏览器发现这个问题的？
+      label: 🔒你是在哪个浏览器发现这个问题的？/What browsers are you seeing the problem on if you're using web version?
       options:
-        - Chrome/谷歌
-        - Microsoft Edge/微软bing
-        - Firefox/火狐
-        - Safari/苹果浏览器
-        - Other/其他
-        - This issue is not front-end related/此问题与前端无关
+        - Chrome/Edge
+        - Firefox
+        - Safari
+        - Other
+    validations:
+      required: true
+   - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 复现步骤
+      description: 该 Bug 是否可复现？如何复现？
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: screenshot
     attributes:
-      label: ✉️Relevant log output/相关日志输出
-      description: |
-        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-        您可以复制黏贴跟Bug相关的日志输出。在这将自动格式化为代码。
-      render: shell
+      label: 截图
+      description: 添加截图可以更清晰地描述存在的问题。
+      value: 
   - type: textarea
+    id: other
     attributes:
-      label: 💾Anything else?/其他相关资料
-      description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
-        您可以在这里贴其他跟问题相关的内容，更有助于我们了解您的问题
-        💡Tip: You can attach images here
-        小贴士：您可以在这附加图片
+      label: 附加说明
+      description: 在此添加附加说明。

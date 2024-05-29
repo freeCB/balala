@@ -3,6 +3,15 @@ description: File a bug report/将您所看到的Bug提交
 title: "Add a title"
 labels: ['bug']
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! 
+        Please include information about your system, the steps to reproduce the bug, 
+        and the version of llamafiles that you are using. 
+        If possible, please provide a minimal code example that reproduces the bug.
+        You may also consider using function call tracing `--ftrace` or the lighter system call tracing `--strace`
+        for additional technical logging that may allow us to narrow down where the fault occurred.
   - type: dropdown
     id: issue-type
     attributes:

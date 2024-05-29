@@ -3,7 +3,7 @@ description: 🐞 反馈问题 / Report a bug
 title: "[🐞 Bug] <title···>"
 labels: [bug]
 body:
-  - type: dropdown
+  - type: markdown
     attributes:
       value: |
         在提交 Issue 之前，请确保：

@@ -22,4 +22,4 @@ body:
         - 功能错误bug/Function Bug
         - 无法判断/I can't tell.
       validations:
-      required: true
+        required: true

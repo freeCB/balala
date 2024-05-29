@@ -3,15 +3,6 @@ description: File a bug report/将您所看到的Bug提交
 title: "Add a title"
 labels: ['bug']
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-        Check out this [link](https://github.com/freeCB/balala)
-        to learn how we manage issues and when your issue will be processed.
-        感谢您对产品的支持~
-        可以查看此链接 [link](https://github.com/freeCB/balala)
-        更有利于加深您对本产品的了解
   - type: dropdown
     id: issue-type
     attributes:

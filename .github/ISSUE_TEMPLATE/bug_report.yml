@@ -23,3 +23,11 @@ body:
         - 无法判断/I can't tell.
     validations:
       required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 📋Bug问题描述/What happened?
+      description: 将Bug问题相关内容进行描述/Also tell us, what did you expect to happen?
+      placeholder: Bug详情描述/Tell us what you see!
+    validations:
+      required: true

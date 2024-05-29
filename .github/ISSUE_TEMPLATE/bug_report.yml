@@ -1,6 +1,6 @@
 name: 🐞 Bug 反馈 / Bug report
 description: 🐞 反馈问题 / Report a bug
-title: "[🐞 Bug] <title···>"
+title: "bug标题/Bug title"
 labels: [bug]
 body:
   - type: markdown
@@ -10,9 +10,6 @@ body:
         + 先前不存在相同的 Issue
         + 该 Bug 不是由 Wordpress 插件、浏览器插件导致的
         + 该 Bug 是由主题导致（在其他主题下不能复现）
-  - type: textarea
-    attributes:
-      label: "What's wrong?"
   - type: dropdown
     id: issue-type
     attributes:

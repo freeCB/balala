@@ -3,13 +3,15 @@ description: File a bug report/将您所看到的Bug提交
 title: "Add a title"
 labels: ['bug']
 body:
-  - type: markdown
+  - type: markdown    
     attributes:
       value: |
-        在提交 Issue 之前，请确保：
-        + 先前不存在相同的 Issue
-        + 该 Bug 不是由 Wordpress 插件、浏览器插件导致的
-        + 该 Bug 是由主题导致（在其他主题下不能复现）
+        Thanks for taking the time to fill out this bug report!
+        Check out this [link](https://github.com/freeCB/balala)
+        to learn how we manage issues and when your issue will be processed.
+        感谢您对产品的支持~
+        可以查看此链接 [link](https://github.com/freeCB/balala)
+        更有利于加深您对本产品的了解
   - type: dropdown
     id: issue-type
     attributes:

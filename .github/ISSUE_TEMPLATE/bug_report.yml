@@ -13,7 +13,7 @@ body:
   - type: dropdown
     id: issue-type
     attributes:
-      label: 🔍Bug type?/Bug类型？
+      label: 🔍Bug类型/Bug type
       options:
         - 显示异常bug/Show Bug
         - 功能错误bug/Function Bug
@@ -34,8 +34,8 @@ body:
       label: 💦发生Bug所在的版本是？What's the version of your bug?
       placeholder: "如 v1.0.0"
       description: |
-        您可以在代码库中看到版本信息[link](Releases · freeCB/balala)
-        You can see the version information in the code base.[link](Releases · freeCB/balala)
+        您可以在代码库中看到版本信息[link](https://github.com/freeCB/balala/releases)
+        You can see the version information in the code base.[link](https://github.com/freeCB/balala/releases)
     validations:
       required: true
   - type: dropdown

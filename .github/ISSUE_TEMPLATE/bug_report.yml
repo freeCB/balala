@@ -12,5 +12,5 @@ body:
         + 该 Bug 是由主题导致（在其他主题下不能复现）
   - type: textarea
   attributes:
-    label: "What's wrong?"- type: textarea
+    label: "What's wrong?"
 

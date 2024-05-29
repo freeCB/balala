@@ -3,7 +3,7 @@ description: File a bug report/将您所看到的Bug提交
 title: "Add a title"
 labels: ['bug']
 body:
-  - type: markdown    
+  - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!

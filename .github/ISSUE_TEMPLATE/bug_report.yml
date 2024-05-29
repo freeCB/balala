@@ -13,4 +13,13 @@ body:
   - type: textarea
     attributes:
       label: "What's wrong?"
-
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 🔍Bug type?/Bug类型？
+      options:
+        - 显示异常bug/Show Bug
+        - 功能错误bug/Function Bug
+        - 无法判断/I can't tell.
+      validations:
+      required: true

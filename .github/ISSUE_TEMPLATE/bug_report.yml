@@ -52,7 +52,7 @@ body:
         - Other
     validations:
       required: true
-   - type: textarea
+  - type: textarea
     id: reproduce-steps
     attributes:
       label: 复现步骤

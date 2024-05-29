@@ -31,3 +31,24 @@ body:
       placeholder: Bug详情描述/Tell us what you see!
     validations:
       required: true
+  - type: input
+    id: version
+    attributes:
+      label: 💦发生Bug所在的版本是？What's the version of your bug?
+      placeholder: "如 v1.0.0"
+      description: |
+        您可以在代码库中看到版本信息[link](Releases · freeCB/balala)
+        You can see the version information in the code base.[link](Releases · freeCB/balala)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 🔒你是在哪个浏览器发现这个问题的？/What browsers are you seeing the problem on if you're using web version?
+      options:
+        - Chrome/Edge
+        - Firefox
+        - Safari
+        - Other
+    validations:
+      required: true

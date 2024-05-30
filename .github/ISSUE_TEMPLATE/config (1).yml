@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-    - name: ✈️Feature requests and questions/功能建议和Bug反馈
-      url: https://github.com/freeCB/balala/discussions
-      about: Please use Discussions for everything apart from the above./除了上述内容相关，其他内容请您移步到讨论区~
+    - name: ✈️F&Q讨论专区（F&Q Discussion Forum）
+      url: https://github.com/freeCB/balala/discussions/categories/q-a-%E7%AD%94%E7%96%91%E5%8C%BA
+      about: 前往F&Q讨论专区进行交流（Head over to the F&Q Discussion Forum to connect）

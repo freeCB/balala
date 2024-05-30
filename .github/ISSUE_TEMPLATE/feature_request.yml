@@ -11,19 +11,19 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: 💬功能描述（Description）
+      label: 💬功能建议（Description）
       description: |
         你希望我们添加什么样的功能？
         What would you like to see added to Balala?
-      placeholder: 请详细说明该功能.（Please explain in details the feature and improvements you'd like to see）
+      placeholder: 请详细描述该功能.（Please explain in details the feature and improvements you'd like to see）
     validations:
       required: true
   - type: textarea
     attributes:
-      label: ✨用例（Use case）
+      label: ✨参考用例（Reference case）
       description: |
-        该功能如何使用及该功能的使用者是谁.
-        How might this feature be used and who might use it.
+        该功能的参考用例，利于我们更好的了解您的想法
+        Reference use cases for features to help us better understand your ideas
   - type: textarea
     attributes:
       label: 💡其他补充（Anything else?）

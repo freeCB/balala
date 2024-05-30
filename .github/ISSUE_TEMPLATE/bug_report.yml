@@ -63,7 +63,7 @@ body:
   - type: textarea
     id: screenshot
     attributes:
-      label: 截图（screenshot）
+      label: 截图（Screenshot）
       description: 添加截图可以更清晰地描述存在的问题。（Adding screenshots gives a clearer picture of the problem）
       value: 
   - type: textarea

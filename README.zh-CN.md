@@ -5,7 +5,7 @@
 <h1>Blala</h1>
 
 让项目变得更加轻便<br/>
-打造专业高效的**管理平台**（[这是链接][(https://github.com/freeCB/balala)]）插件系统<br/>
+打造专业高效的**管理平台**（[这是链接](https://github.com/freeCB/balala)]）插件系统<br/>
 一键**免费**拥有你自己的 ChatGPT/Gemini/Claude/Ollama 应用
 
 [English](./README.md) · **简体中文** · [更新日志](./CHANGELOG.md) · [文档][github-document-link] · [报告问题][github-issues-link] · [请求功能][github-issues-link]

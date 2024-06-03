@@ -1,6 +1,6 @@
 <div align="center"><a name="readme-top"></a>
 
-[![](https://github.com/freeCB/balala/blob/main/banner%E6%9B%BF%E6%8D%A2.png)][(https://github.com/freeCB/balala)]
+[![](https://github.com/freeCB/balala/blob/main/banner%E6%9B%BF%E6%8D%A2.png)](https://github.com/freeCB/balala)
 
 <h1>Blala</h1>
 

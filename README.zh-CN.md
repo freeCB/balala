@@ -2,10 +2,10 @@
 
 [![][image-banner]][vercel-link]
 
-<h1>Lobe Chat</h1>
+<h1>Blala</h1>
 
-现代化设计的开源 ChatGPT/LLMs 聊天应用与开发框架<br/>
-支持语音合成、多模态、可扩展的（[function call][docs-functionc-call]）插件系统<br/>
+让项目变得更加轻便<br/>
+打造专业高效的**管理平台**（[这是链接][(https://github.com/freeCB/balala)]）插件系统<br/>
 一键**免费**拥有你自己的 ChatGPT/Gemini/Claude/Ollama 应用
 
 [English](./README.md) · **简体中文** · [更新日志](./CHANGELOG.md) · [文档][github-document-link] · [报告问题][github-issues-link] · [请求功能][github-issues-link]

@@ -8,7 +8,7 @@
 打造专业高效的**管理平台**（[这是链接](https://github.com/freeCB/balala)）插件系统<br/>
 这是一条很长的文字
 
-[English](https://github.com/freeCB/balala/blob/main/README.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档][https://github.com/freeCB/balala/releases] ·  [Bug反馈][https://github.com/freeCB/balala/issues] · [讨论专区][https://github.com/freeCB/balala/discussions]
+[English](https://github.com/freeCB/balala/blob/main/README.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) ·  [Bug反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)
 <!-- SHIELD GROUP -->
 
 [![][github-release-shield]][github-release-link]

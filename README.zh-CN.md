@@ -26,12 +26,6 @@
 [![][share-whatsapp-shield]][share-whatsapp-link]
 [![][share-weibo-shield]][share-weibo-link]
 222
-[![][share-x-shield]][share-x-link]
-[![][share-telegram-shield]][share-telegram-link]
-[![][share-whatsapp-shield]][share-whatsapp-link]
-[![][share-reddit-shield]][share-reddit-link]
-[![][share-weibo-shield]][share-weibo-link]
-[![][share-mastodon-shield]][share-mastodon-link]
 
 <sup>探索私人生产力的未来。在个体崛起的时代中为你打造.</sup>
 
@@ -666,6 +660,9 @@ This project is [MIT](./LICENSE) licensed.
 [share-x-link]: https://x.com/intent/post?hashtags=chatbot%2CchatGPT%2CopenAI&text=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA+GitHub+%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE+%F0%9F%A4%AF+Balala+-+%E5%BC%80%E6%BA%90%E7%9A%84%E3%80%81%E5%8F%AF%E6%89%A9%E5%B1%95%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E3%80%82%0A%E5%AE%83%E6%94%AF%E6%8C%81%E4%B8%80%E9%94%AE%E5%85%8D%E8%B4%B9%E4%B8%93%E5%B1%9E%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%A9%BA%E9%97%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BC%81%E4%B8%9A%E6%9B%B4%E8%BD%BB%E4%BE%BF%E7%9A%84%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6&url=https%3A%2F%2Fgithub.com%2FfreeCB%2Fbalala
 [share-whatsapp-shield]: https://img.shields.io/badge/Share%20%20whatsapp-black?style=flat-square&logo=whatsapp
 [share-whatsapp-link]: https://api.whatsapp.com/send?text=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%20GitHub%20%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%20%F0%9F%A4%AF%20Balala%20-%20%E5%BC%80%E6%BA%90%E7%9A%84%E3%80%81%E5%8F%AF%E6%89%A9%E5%B1%95%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E3%80%82%0A%E5%AE%83%E6%94%AF%E6%8C%81%E4%B8%80%E9%94%AE%E5%85%8D%E8%B4%B9%E4%B8%93%E5%B1%9E%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%A9%BA%E9%97%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BC%81%E4%B8%9A%E6%9B%B4%E8%BD%BB%E4%BE%BF%E7%9A%84%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6&url=GitHub%20-%20freeCB/balala
+[share-weibo-shield]: https://img.shields.io/badge/Share%20%20weibo-black?style=flat-square&logo=sinaweibo
+[share-weibo-link]: https://service.weibo.com/share/share.php?sharesource=weibo&title=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%20GitHub%20%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%20%F0%9F%A4%AF%20Balala%20-%20%E5%BC%80%E6%BA%90%E7%9A%84%E3%80%81%E5%8F%AF%E6%89%A9%E5%B1%95%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E3%80%82%0A%E5%AE%83%E6%94%AF%E6%8C%81%E4%B8%80%E9%94%AE%E5%85%8D%E8%B4%B9%E4%B8%93%E5%B1%9E%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%A9%BA%E9%97%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BC%81%E4%B8%9A%E6%9B%B4%E8%BD%BB%E4%BE%BF%E7%9A%84%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6.%20%23Balala%20%23%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%20%23%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86&url=https://github.com/freeCB/balala
+
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 [chat-desktop]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg
 [chat-desktop-report]: https://lobehub.github.io/lobe-chat/lighthouse/chat/desktop/chat_preview_lobehub_com_chat.html

@@ -11,7 +11,7 @@
 [English](https://github.com/freeCB/balala/blob/main/README.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) ·  [Bug反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)
 <!-- SHIELD GROUP -->
 
-![GitHub Release](https://img.shields.io/github/v/release/freeCB/balala?style=flat-square&labelColor=%23000000&color=%2375FA61&link=https%3A%2F%2Fgithub.com%2FfreeCB%2Fbalala%2Freleases)
+[![][GitHub Release]][GitHub Release link]
 ![Static Badge](https://img.shields.io/badge/build-online-brightgreen?style=flat-square&logo=vercel&label=Balala&labelColor=%23000000&color=%2373FBFD)
 ![GitHub Discussions](https://img.shields.io/github/discussions/freeCB/balala?style=flat-square&labelColor=%23000000&color=%23EA3FF7&link=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat%2Fdiscussions)
 [![][docker-release-shield]][docker-release-link]
@@ -654,6 +654,8 @@ This project is [MIT](./LICENSE) licensed.
 
 <!-- LINK GROUP -->
 
+[GitHub Release]: https://img.shields.io/github/v/release/freeCB/balala?style=flat-square&labelColor=%23000000&color=%2375FA61
+[GitHub Release link]: https://github.com/freeCB/balala/releases
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 [chat-desktop]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg
 [chat-desktop-report]: https://lobehub.github.io/lobe-chat/lighthouse/chat/desktop/chat_preview_lobehub_com_chat.html

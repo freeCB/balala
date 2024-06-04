@@ -11,7 +11,8 @@
 [English](https://github.com/freeCB/balala/blob/main/README.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) ·  [Bug反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)
 <!-- SHIELD GROUP -->
 
-[![][github-release-shield]][github-release-link]
+![GitHub Release](https://img.shields.io/github/v/release/freeCB/balala?style=flat-square&labelColor=%23000000&color=%2375FA61&link=https%3A%2F%2Fgithub.com%2FfreeCB%2Fbalala%2Freleases)
+![Static Badge](https://img.shields.io/badge/build-online-brightgreen?style=flat-square&logo=vercel&label=Balala&labelColor=%23000000&color=%2373FBFD)
 [![][docker-release-shield]][docker-release-link]
 [![][vercel-shield]][vercel-link]
 [![][discord-shield]][discord-link]<br/>

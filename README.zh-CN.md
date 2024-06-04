@@ -15,6 +15,7 @@
 [![][web vercel]][web vercel link]
 [![][GitHub Discussions]][GitHub Discussions link]
 [![][GitHub issues]][GitHub issues link]
+[![][GitHub star]][GitHub star link]
 
 2222
 [![][docker-release-shield]][docker-release-link]
@@ -665,6 +666,10 @@ This project is [MIT](./LICENSE) licensed.
 [GitHub Discussions link]: https://github.com/freeCB/balala/discussions
 [GitHub issues]: https://img.shields.io/github/issues/freeCB/balala?style=flat-square&labelColor=%23000000&color=%23FFF840
 [GitHub issues link]: https://github.com/freeCB/balala/issues
+[GitHub star]: https://img.shields.io/github/stars/freeCB?style=flat-square&logo=%20&labelColor=%23000000&color=%23FF8787
+[GitHub star link]: https://github.com/freeCB/balala/stargazers
+
+
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 [chat-desktop]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg

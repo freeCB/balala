@@ -13,6 +13,7 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/freeCB/balala?style=flat-square&labelColor=%23000000&color=%2375FA61&link=https%3A%2F%2Fgithub.com%2FfreeCB%2Fbalala%2Freleases)
 ![Static Badge](https://img.shields.io/badge/build-online-brightgreen?style=flat-square&logo=vercel&label=Balala&labelColor=%23000000&color=%2373FBFD)
+![GitHub Discussions](https://img.shields.io/github/discussions/freeCB/balala?style=flat-square&labelColor=%23000000&color=%23EA3FF7&link=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat%2Fdiscussions)
 [![][docker-release-shield]][docker-release-link]
 [![][vercel-shield]][vercel-link]
 [![][discord-shield]][discord-link]<br/>

@@ -12,8 +12,11 @@
 <!-- SHIELD GROUP -->
 
 [![][GitHub Release]][GitHub Release link]
-![Static Badge](https://img.shields.io/badge/build-online-brightgreen?style=flat-square&logo=vercel&label=Balala&labelColor=%23000000&color=%2373FBFD)
-![GitHub Discussions](https://img.shields.io/github/discussions/freeCB/balala?style=flat-square&labelColor=%23000000&color=%23EA3FF7&link=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat%2Fdiscussions)
+[![][web vercel]][web vercel link]
+[![][GitHub Discussions]][GitHub Discussions link]
+[![][GitHub issues]][GitHub issues link]
+
+2222
 [![][docker-release-shield]][docker-release-link]
 [![][vercel-shield]][vercel-link]
 [![][discord-shield]][discord-link]<br/>
@@ -656,6 +659,13 @@ This project is [MIT](./LICENSE) licensed.
 
 [GitHub Release]: https://img.shields.io/github/v/release/freeCB/balala?style=flat-square&labelColor=%23000000&color=%2375FA61
 [GitHub Release link]: https://github.com/freeCB/balala/releases
+[web vercel]: https://img.shields.io/badge/build-online-brightgreen?style=flat-square&logo=vercel&label=Balala&labelColor=%23000000&color=%2373FBFD
+[web vercel link]: https://github.com/freeCB
+[GitHub Discussions]: https://img.shields.io/github/discussions/freeCB/balala?style=flat-square&labelColor=%23000000&color=%23EA3FF7
+[GitHub Discussions link]: https://github.com/freeCB/balala/discussions
+[GitHub issues]: https://img.shields.io/github/issues/freeCB/balala?style=flat-square&labelColor=%23000000&color=%23FFF840
+[GitHub issues link]: https://github.com/freeCB/balala/issues
+
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 [chat-desktop]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg
 [chat-desktop-report]: https://lobehub.github.io/lobe-chat/lighthouse/chat/desktop/chat_preview_lobehub_com_chat.html

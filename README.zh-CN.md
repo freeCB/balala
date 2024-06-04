@@ -17,22 +17,8 @@
 [![][GitHub issues]][GitHub issues link]
 [![][GitHub star]][GitHub star link]
 
-2222
-[![][docker-release-shield]][docker-release-link]
-[![][vercel-shield]][vercel-link]
-[![][discord-shield]][discord-link]<br/>
-[![][codecov-shield]][codecov-link]
-[![][github-action-test-shield]][github-action-test-link]
-[![][github-action-release-shield]][github-action-release-link]
-[![][github-releasedate-shield]][github-releasedate-link]<br/>
-[![][github-contributors-shield]][github-contributors-link]
-[![][github-forks-shield]][github-forks-link]
-[![][github-stars-shield]][github-stars-link]
-[![][github-issues-shield]][github-issues-link]
-[![][github-license-shield]][github-license-link]<br>
-[![][sponsor-shield]][sponsor-link]
 
-**分享 LobeChat 给你的好友**
+**分享 Balala 给你的好友**
 
 [![][share-x-shield]][share-x-link]
 [![][share-telegram-shield]][share-telegram-link]

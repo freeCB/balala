@@ -1,7 +1,7 @@
 <div align="center"><a name="readme-top"></a>
 
-[![](https://github.com/CZDESIGN2023/balala-api/blob/main/balala%E7%9A%84banner.jpg)](https://github.com/CZDESIGN2023/balala-api)
-# <img src="https://github.com/Bluesky94z/-12/blob/master/balala%20%E7%9A%84logo.jpg" width="22px">  Blala
+[![](https://github.com/freeCB/balala/blob/main/balala%E7%9A%84banner.jpg)](https://github.com/freeCB/balala)
+# <img src="https://github.com/freeCB/balala/blob/master/balala%20%E7%9A%84logo.jpg" width="22px">  Blala
 
 让项目变得更加轻便<br/>
 打造专业高效的**管理平台**（[Link](https://github.com/CZDESIGN2023/balala-api)）<br/>

@@ -4,7 +4,7 @@
 # <img src="https://github.com/freeCB/balala/blob/main/balala%20%E7%9A%84logo.jpg" width="22px">  Blala
 
 Making projects lighter<br/>
-Create a professional & efficient**Management Platform**（[Link](https://github.com/CZDESIGN2023/balala-api)）<br/>
+Create a professional & efficient **Management Platform**（[Link](https://github.com/CZDESIGN2023/balala-api)）<br/>
 
  **English** ·[Chinese](https://github.com/freeCB/balala/blob/main/README.zh-CN.md)· [Update](https://github.com/freeCB/balala/releases) · [Document](https://github.com/freeCB/balala/releases) ·  [Bug Report](https://github.com/freeCB/balala/issues) · [Discussion](https://github.com/freeCB/balala/discussions)
 <!-- SHIELD GROUP -->
@@ -34,9 +34,10 @@ Create a professional & efficient**Management Platform**（[Link](https://github
 >We want to provide modern design components and tools for enterprise management and share them as open source。<br/>
 >We hope to provide developers and users with a more open, transparent and friendly product ecosystem。<br/>
 
-For both casual users and professional developers，Balala aims to find easier ways to manage projects.。
-Balala Currently under active development，<br/>
-Feel free to submit any requests or questions you may have! [issues][issues-link]
+For both casual users and professional developers<br/>
+Balala aims to find easier ways to manage projects<br/>
+Balala Currently under active development<br/>
+Feel free to submit any requests or questions you may have! [issues][issues-link]<br/>
 <br/>
 <br/>
 

@@ -6,7 +6,7 @@
 Making projects lighter<br/>
 Create a professional & efficient**Management Platform**（[Link](https://github.com/CZDESIGN2023/balala-api)）<br/>
 
- **English** ·[Chinese](https://github.com/freeCB/balala/blob/main/README.md)· [Update](https://github.com/freeCB/balala/releases) · [Document](https://github.com/freeCB/balala/releases) ·  [Bug Report](https://github.com/freeCB/balala/issues) · [Discussion](https://github.com/freeCB/balala/discussions)
+ **English** ·[Chinese](https://github.com/freeCB/balala/blob/main/README.zh-CN.md)· [Update](https://github.com/freeCB/balala/releases) · [Document](https://github.com/freeCB/balala/releases) ·  [Bug Report](https://github.com/freeCB/balala/issues) · [Discussion](https://github.com/freeCB/balala/discussions)
 <!-- SHIELD GROUP -->
 
 [![][GitHub Release]][GitHub Release link]

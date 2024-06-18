@@ -1,7 +1,7 @@
 <div align="center"><a name="readme-top"></a>
 
 [![](https://github.com/freeCB/balala/blob/main/balala%E7%9A%84banner.jpg)](https://github.com/freeCB/balala)
-# <img src="https://github.com/freeCB/balala/blob/master/balal的logo.jpg" width="22px">  Blala
+# <img src="https://github.com/freeCB/balala/blob/main/balala%20%E7%9A%84logo.jpg" width="22px">  Blala
 
 让项目变得更加轻便<br/>
 打造专业高效的**管理平台**（[Link](https://github.com/CZDESIGN2023/balala-api)）<br/>
@@ -40,7 +40,7 @@ Balala目前正在积极开发中，<br/>
 <br/>
 <br/>
 
-### 📘Docker快速开始：
+### （1）📘Docker快速开始：
 
 ```
 git clone https://github.com/freeCB/balala.git
@@ -50,19 +50,20 @@ git clone https://github.com/freeCB/balala.git
 cd balala
 ```
 
-### 🤖启动
+### （2）🤖启动
 ```
 docker compose up -d
 ```
 
-### 🌐访问
+### （3）🌐访问
 打开游览器访问：http://localhost:8080/
 
 ⚡️超级管理员
 >用户名：**super**<br/>
 >初始密码：**Passw@rd**
 <br/>
-### ✨目录结构
+
+### （4）✨目录结构
 ```
 + balala
   + .env                // 启动配置文件
@@ -70,18 +71,18 @@ docker compose up -d
   + README.md           // 项目说明
 ```
 
-### 📘停止
+### （5）📘停止
 ```
 docker compose stop
 ```
 
-### 📦重启
+### （6）📦重启
 ```
 docker compose restart
 ```
 
 
-### 🧩启动配置修改
+### （7）🧩启动配置修改
 配置文件：.env
 ```
 # 项目名称
@@ -96,11 +97,15 @@ WEB_PORT=8080
 VERSION=v1.3.3
 ```
 
-### 🧩确认当前版本
-a：登录页面右下角，查看当前版本
+### （8）🧩确认当前版本
+#### 安装完毕，或者更新完毕后，查看登录页面右下角，查看当前系统版本，与git上当前最新版本是否一致。[⭐查看当前版本](https://github.com/freeCB/balala/releases)<br/>
+
+参照图样如下👇：<br/>
+# <img src="https://github.com/freeCB/balala/blob/main/.github/cankaojietu.jpg" width="888px">
 
 
-### 🗣️项目自定义
+
+### （9）🗣️项目自定义
 连接到mysql
 - [x] 1. LOGO
 ```sql

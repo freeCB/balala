@@ -6,7 +6,7 @@
 让项目变得更加轻便<br/>
 打造专业高效的**管理平台**（[Link](https://github.com/CZDESIGN2023/balala-api)）<br/>
 
-[English](https://github.com/freeCB/balala/blob/main/README.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) ·  [Bug反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)
+[English](https://github.com/freeCB/balala/blob/main/README.zh-EN.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) ·  [Bug反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)
 <!-- SHIELD GROUP -->
 
 [![][GitHub Release]][GitHub Release link]

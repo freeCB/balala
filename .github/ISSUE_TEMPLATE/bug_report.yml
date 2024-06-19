@@ -1,0 +1,73 @@
+name: 🐞 Bug 反馈（Bug report）
+description: 🐞 反馈问题（Report a bug）
+title: "bug标题（Bug title）"
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        在提交 Issue 之前，请确保：
+        + 先前不存在相同的 Issue
+        + 该 Bug 不是由 Wordpress 插件、浏览器插件导致的
+        + 该 Bug 是由主题导致（在其他主题下不能复现）
+        Before submitting an Issue, make sure:
+        + The same Issue does not previously exist
+        + The bug is not caused by a Wordpress plugin, browser plugin, etc.
+        + The bug is caused by a theme (not reproducible in other themes)
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 🔍Bug类型（Bug type）
+      options:
+        - 显示异常bug/Show Bug
+        - 功能错误bug/Function Bug
+        - 无法判断/I can't tell.
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 📋Bug问题描述（What happened?）
+      description: 将Bug问题相关内容进行描述（Also tell us, what did you expect to happen?）
+      placeholder: Bug详情描述（Tell us what you see!）
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 💦发生Bug所在的版本是？（What's the version of your bug?）
+      placeholder: "如 v1.0.0（As v1.0.0）"
+      description: |
+        您可以在代码库中看到版本信息[link](https://github.com/freeCB/balala/releases)
+        You can see the version information in the code base.[link](https://github.com/freeCB/balala/releases)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 🔒你是在哪个浏览器发现这个问题的？（What browsers are you seeing the problem on if you're using web version?）
+      options:
+        - Chrome/Edge
+        - Firefox
+        - Safari
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 复现步骤（Steps to Reproduction）
+      description: 该 Bug 是否可复现？如何复现？（Is the bug reproducible? How can it be reproduced?）
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图（Screenshot）
+      description: 添加截图可以更清晰地描述存在的问题。（Adding screenshots gives a clearer picture of the problem）
+      value: 
+  - type: textarea
+    id: other
+    attributes:
+      label: 附加说明（Annotations）
+      description: 在此添加附加说明。（Add additional notes here）

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+    - name: ✈️功能建议和Bug反馈（Feature requests and questions）
+      url: https://github.com/freeCB/balala/discussions
+      about: 除了上述内容相关，其他内容请您移步到讨论区~（Please use Discussions for everything apart from the above）

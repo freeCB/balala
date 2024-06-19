@@ -51,23 +51,34 @@ MYSQL_PORT=3306
 # web 映射端口号
 WEB_PORT=8080
 # 版本
-VERSION=v1.3.3
+VERSION=v1.3.3.1
 ```
 
-### 项目自定义
-连接到mysql
-1. LOGO
-```sql
-update config set value = "https://example.com/logo.png" where config_key = "balala.logo";
-```
-value 的值是图片的url，也可以是base64
 
-2. 网页标题
-```sql
-update config set value = "new title" where config_key = "balala.title";
+## 数据备份与恢复
+
+### 备份
+```shell
+# 停止容器
+docker compose stop
+
+# 执行备份脚本
+./scripts/backup_store.sh
+# 默认在当前目录生成，文件示例：`backup_v1.3.3_20240619-181758.tar`
+
+# 重新启动容器
+docker compose up -d
 ```
 
-3. 修改项目地址
-```sql
-update config set value = "https://example.com" where config_key = "notify.redirect.domain";
-```
+
+
+### 恢复
+```shell
+# 停止容器
+docker compose stop
+
+# 执行恢复脚本
+./scripts/backup_recovery.sh
+
+# 重新启动容器
+docker compose up -d

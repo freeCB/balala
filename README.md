@@ -78,7 +78,8 @@ docker compose up -d
 docker compose stop
 
 # 执行恢复脚本
-./scripts/backup_recovery.sh
+./scripts/backup_recovery.sh -f <生成的备份文件>
+# 示例：./scripts/backup_recovery.sh -f backup_v1.3.3_20240619-181758.tar
 
 # 重新启动容器
 docker compose up -d

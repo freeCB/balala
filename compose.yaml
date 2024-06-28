@@ -22,6 +22,9 @@ services:
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      TEA_IM_DOMAIN: "${TEA_IM_DOMAIN}"
+      TEA_IM_PRIVATE_KEY: "${TEA_IM_PRIVATE_KEY}"
+      TEA_IM_PLATFORM_CODE: "${TEA_IM_PLATFORM_CODE}"
     networks:
       - bridge-net
     volumes:

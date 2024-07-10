@@ -1,6 +1,7 @@
 services:
   mysql:
     image: freecb/balala-mysql:${VERSION}
+    restart: unless-stopped
     networks:
       - bridge-net
     ports:
@@ -12,13 +13,14 @@ services:
       - mysql_data:/var/lib/mysql # 挂载mysql数据
   redis:
     image: redis:7.2.3
+    restart: unless-stopped
     networks:
       - bridge-net
     volumes:
       - redis_data:/data
   api:
     image: freecb/balala-api:${VERSION}
-    restart: always
+    restart: unless-stopped
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
@@ -36,13 +38,15 @@ services:
       - redis
   web:
     image: freecb/balala-web:${VERSION}
-    restart: always
+    restart: unless-stopped
     networks:
       - bridge-net
     ports:
       - '${WEB_PORT}:80'
     environment:
       TZ: Asia/Shanghai
+    depends_on:
+      - api
 networks:
   bridge-net:
     driver: bridge

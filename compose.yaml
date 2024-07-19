@@ -2,6 +2,12 @@ services:
   mysql:
     image: freecb/balala-mysql:${VERSION}
     restart: unless-stopped
+    healthcheck:
+      test: "mysqladmin ping -h localhost --silent"
+      interval: 30s
+      timeout: 30s
+      retries: 5
+      start_period: 15s
     networks:
       - bridge-net
     ports:
@@ -21,6 +27,12 @@ services:
   api:
     image: freecb/balala-api:${VERSION}
     restart: unless-stopped
+    healthcheck:
+      test: "nc -zv localhost 18001"
+      interval: 30s
+      timeout: 30s
+      retries: 100
+      start_period: 15s
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
@@ -34,8 +46,12 @@ services:
       - river_files:/app/configs/var/ # 挂载river同步position
     command: [ '-c', './configs/config.yaml' ] #指定配置文件
     depends_on:
-      - mysql
-      - redis
+      redis:
+        condition: service_started
+      mysql:
+        condition: service_healthy
+      es7:
+        condition: service_healthy
   web:
     image: freecb/balala-web:${VERSION}
     restart: unless-stopped
@@ -46,7 +62,37 @@ services:
     environment:
       TZ: Asia/Shanghai
     depends_on:
-      - api
+      api:
+        condition: service_healthy
+
+  es7:
+    image: elasticsearch:7.17.22
+    restart: unless-stopped
+    healthcheck:
+      test: "nc -zv localhost 9200"
+      interval: 30s
+      timeout: 30s
+      retries: 5
+      start_period: 20s
+    mem_limit: 8g
+    networks:
+      - bridge-net
+    environment:
+      - discovery.type=single-node
+
+  mysql2es:
+    image: freecb/balala-mysql2es:${VERSION}
+    restart: unless-stopped
+    networks:
+      - bridge-net
+    depends_on:
+      api:
+        condition: service_healthy
+    command: 
+     - "-my_addr"
+     - "mysql:3306"
+     - "-my_pass"
+     - "${MYSQL_ROOT_PASSWORD}"
 networks:
   bridge-net:
     driver: bridge

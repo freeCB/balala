@@ -2,7 +2,7 @@
 <div align="center">
 
   <a href="https://github.com/freeCB/balala">
-      <img src="https://github.com/freeCB/balala/raw/main/banner.jpg" style="border-radius:8px; width:100%; " alt="Balala｜协作效率标准化管理工具"/>
+      <img src="https://github.com/freeCB/balala/aa/raw/main/banner.jpg" style="border-radius:8px; width:100%; " alt="Balala｜协作效率标准化管理工具"/>
   </a>
   
 </div>

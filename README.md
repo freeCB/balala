@@ -94,7 +94,7 @@ docker compose up -d
 ## 与halala关联
 
 ### 版本要求
-balala >= v1.3.5.1
+balala >= v1.3.6.2
 
 ### 配置
 1. 修改 .env 文件中

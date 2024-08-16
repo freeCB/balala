@@ -7,20 +7,22 @@
   
 </div>
 
-<br/>
-
 <!-- logo && tittle -->
 
+<!-- # <div align="center" style="font-size:22px; width:100%; display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center; "><img src="https://github.com/freeCB/balala/raw/main/logo.jpg" style="border-radius:4px; width:32px; margin-right: 8px" > Balala ｜协作效率标准化管理工具</div> -->
+
 <div align="center" >
-  
-# <img src="https://github.com/freeCB/balala/blob/main/.github/aa/logo.jpg" style="border-radius:4px; width:32px; margin-right: 8px;" > Balala｜协作效率标准化管理工具
+
+# <img src="https://github.com/freeCB/balala/blob/main/.github/aa/logo.jpg" style="border-radius:4px; width:32px; margin-right: 6px;" > Balala ｜协作效率标准化管理工具
 
 </div>
 
 <!-- 快捷跳转 -->
 <div align="center">
 
-[English](https://github.com/freeCB/balala/blob/main/README.zh-EN.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) · [BUG 反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)· ⚡️[快速部署](https://github.com/Bluesky94z/-12/blob/master/readme-zh.md#%EF%B8%8F-%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2)
+<!-- [English](https://github.com/freeCB/balala/blob/main/README.zh-EN.md) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [文档](https://github.com/freeCB/balala/releases) · [BUG 反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)· ⚡️[快速部署](https://github.com/freeCB/balala?tab=readme-ov-file#快速部署) -->
+
+⚡️[快速部署](https://github.com/freeCB/balala?tab=readme-ov-file#快速部署) · **简体中文** · [更新日志](https://github.com/freeCB/balala/releases) · [BUG 反馈](https://github.com/freeCB/balala/issues) · [讨论专区](https://github.com/freeCB/balala/discussions)
 
 </div>
 
@@ -68,7 +70,7 @@
 
 <!-- 内容 -->
 
-## - 📦产品特点
+## - 📦 产品特点
 
 - **本地部署**：降低企业信息安全风险，具有更高的灵活性和可扩展性。<br/>
 - **轻量管理**：搭建可视化项目进度，简单易用，便捷管理，实时跟进，驱动项目成功。<br/>
@@ -80,7 +82,7 @@
 
 <!-- 部署 -->
 
-## - 🧩环境要求
+## - 🧩 环境要求
 
 - 安装前提： **Docker** ≥`v23.0.1` 和 **Docker Compose** ≥`v2.0+`
 - 支持环境： `Centos/Debian/Ubuntu/mac0S/Windows`
@@ -125,7 +127,6 @@ http://localhost:8080
 ```
 
 <br/>
-<br/>
 
 <!-- 维护 -->
 
@@ -145,30 +146,36 @@ docker compose stop
 docker compose restart
 ```
 
-<br>
+<br/>
 
 ---
 
 ### - 升级更新：
 
-
 > [!TIP]
-> 在升级之前请备份好你的数据！
+>
+> - 在升级之前请 [备份](https://github.com/freeCB/balala?tab=readme-ov-file#备份还原) 好你的数据！
+> - 注：其中 `v.x.x.x` 为你需要升级的`版本号`。👉[（查看版本号）](https://github.com/freeCB/balala/releases)
 
-- 1、修改.env文件，将版本号改成要升级的目标版本。
-```
+1. 修改`.env` 启动配置文件文件，将`版本号`改成要升级的`目标版本`。
+
+```shell
 VERSION=vx.x.x.x
 ```
-注：其中v.x.x.x 为你需要升级的版本号。👉[（查看版本号）](https://github.com/freeCB/balala/releases)
-- 2、重新启动
-```
+
+2. 停止并清理容器
+
+```shell
 docker compose down
 ```
-```
+
+3. 重新启动
+
+```shell
 docker compose up -d
 ```
 
-<br>
+<br/>
 
 ---
 
@@ -176,39 +183,41 @@ docker compose up -d
 
 #### （一）备份：
 
-- 1、停止容器
+1. 停止容器
 
 ```shell
 docker compose stop
 ```
 
-- 2、执行备份脚本
+2. 执行备份脚本
 
 ```shell
 ./scripts/backup_store.sh
+# 默认在当前目录生成，文件示例：`backup_v1.3.3.1_20240619-181758.tar`
 ```
 
-- 3、重新启动容器
+3. 重新启动容器
 
 ```shell
-docker compose stop
+docker compose up -d
 ```
 
 #### （二）还原：
 
-- 1、停止容器
+1. 停止容器
 
 ```shell
 docker compose stop
 ```
 
-- 2、执行恢复脚本
+2. 执行恢复脚本
 
 ```shell
 ./scripts/backup_recovery.sh -f <生成的备份文件>
+# 示例：`./scripts/backup_recovery.sh -f backup_v1.3.3.1_20240619-181758.tar`
 ```
 
-- 3、重新启动容器
+3. 重新启动容器
 
 ```shell
 docker compose up -d
@@ -237,35 +246,10 @@ WEB_PORT=8080
 VERSION=v1.3.3
 ```
 
-#### （二）自定义“项目信息参数”：
+> [!TIP]
+> 修改生效需要先执行`docker compose down`停止并清理容器，再执行`docker compose up -d`重新启动容器
 
-##### 需要连接到`mysql`，进行 `sql`语句命令操作
-
-1. 自定义 `LOGO`
-
-```sql
-update config set value = "https://example.com/logo.png" where config_key = "balala.logo";
-```
-
-> `value` 的值是图片的 `url`，也可以是 `base64` ；
-
-<br/>
-
-2. 网页标题
-
-```sql
-update config set value = "new title" where config_key = "balala.title";
-```
-
-<br/>
-
-3. 修改项目地址
-
-```sql
-update config set value = "https://example.com" where config_key = "notify.redirect.domain";
-```
-
-<br>
+---
 
 <!-- 框架介绍 -->
 
@@ -329,7 +313,7 @@ update config set value = "https://example.com" where config_key = "notify.redir
 <!-- 联系与支持 -->
 
 ```
-Mail：2023czdesign#gmail.com    //请将 “#” 修改为“@”
+Mail：2023czdesign#gmail.com    // 请将 “#” 修改为“@”
 ```
 
 <br/>

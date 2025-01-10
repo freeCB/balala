@@ -38,6 +38,20 @@ while getopts "hf:" opt; do
     esac
 done
 
+# 读取 .env 文件中的 VERSION 变量
+if [ -f .env ]; then
+    source .env
+else
+    echo "Error: .env file not found."
+    exit 1
+fi
+
+# 检查 VERSION 变量是否定义
+if [ -z "$VERSION" ]; then
+    echo "Error: VERSION variable is not defined in .env file."
+    exit 1
+fi
+
 # 如果没有提供文件路径，则显示帮助信息并退出
 if [ -z "$file_path" ]; then
     echo "Error: No file path provided." >&2
@@ -53,14 +67,14 @@ fi
 
 # 检查文件是否为tar格式
 if ! tar -tf "$file_path" >/dev/null 2>&1; then
-  echo "$file_path is not a valid tar file."
-  exit 1
+    echo "Error: $file_path is not a valid tar file."
+    exit 1
 fi
 
 # 检查文件是否为备份文件
 if ! tar -tf "$file_path" | grep -q '^volumes/'; then
-  echo "$file_path is not a backup file."
-  exit 1
+    echo "Error: $file_path is not a backup file."
+    exit 1
 fi
 
 # 转换为绝对路径
@@ -82,6 +96,9 @@ mount_params=""
 for volume_name in $volume_names; do
     mount_params+=" -v $volume_name:/volumes/$volume_name"
 done
+
+# 预创建容器，避免出现warning
+docker compose create
 
 # 创建临时容器并恢复卷数据
 docker run --rm \

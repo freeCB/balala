@@ -61,7 +61,7 @@ echo "Backup directory: $BACKUP_DIR"
 
 # 检查文件是否存在
 if [ ! -d "$BACKUP_DIR" ]; then
-    echo "Directory does not exist: $BACKUP_DIR"
+    echo "Error: Directory does not exist: $BACKUP_DIR"
     exit 1
 fi
 
@@ -69,13 +69,13 @@ fi
 if [ -f .env ]; then
     source .env
 else
-    echo "No .env file found."
+    echo "Error: .env file not found."
     exit 1
 fi
 
 # 检查 VERSION 变量是否定义
 if [ -z "$VERSION" ]; then
-    echo "VERSION variable is not defined in .env file."
+    echo "Error: VERSION variable is not defined in .env file."
     exit 1
 fi
 

@@ -83,17 +83,17 @@ fi
 case "$mode" in
     full)
         echo "Backup full"
-        volume_names=$(docker volume ls --format "{{.Name}}" | grep -E "^${COMPOSE_PROJECT_NAME}_")
+        volume_names=$(docker compose config --volumes)
         backup_suffix="_full"
         ;;
     data)
         echo "Backup data only"
-        volume_names=$(docker volume ls --format "{{.Name}}" | grep -E "^${COMPOSE_PROJECT_NAME}_" | grep -v "^${COMPOSE_PROJECT_NAME}_upload_files$")
+        volume_names=$(docker compose config --volumes | grep -v "^upload_files$")
         backup_suffix="_data"
         ;;
     files)
         echo "Backup upload files only"
-        volume_names=$(docker volume ls --format "{{.Name}}" | grep -E "^${COMPOSE_PROJECT_NAME}_upload_files$")
+        volume_names=$(docker compose config --volumes | grep -E "^upload_files$")
         backup_suffix="_files"
         ;;
 esac
@@ -104,15 +104,27 @@ if [ -z "$volume_names" ]; then
     exit 1
 fi
 
+# 检查 COMPOSE_PROJECT_NAME 是否已定义
+if [ -z "$COMPOSE_PROJECT_NAME" ]; then
+    echo "Error: COMPOSE_PROJECT_NAME is not set"
+    exit 1
+fi
+
+# 给 volumes 加上项目名前缀
+for volume_name in $volume_names; do
+    echo "Volume: $volume_name"
+    volume_array+=("${COMPOSE_PROJECT_NAME}_${volume_name}")
+done
+
 echo "Version: $VERSION"
-echo "Volumes: $(array_to_string $volume_names)"
+echo "Volumes: $(array_to_string "${volume_array[@]}")"
 
 # 构建备份文件名
 backup_file="backup_${COMPOSE_PROJECT_NAME}_${VERSION}_$(date +%Y%m%d-%H%M%S)${backup_suffix}.tar"
 
 # 构建挂载卷的参数
 mount_params=""
-for volume_name in $volume_names; do
+for volume_name in "${volume_array[@]}"; do
     mount_params+=" -v $volume_name:/volumes/$volume_name"
 done
 
